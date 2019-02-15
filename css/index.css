@@ -186,21 +186,46 @@ header .logo {
   flex-direction: row;
   justify-content: space-around;
 }
-.learn-top .content {
+.learn-top .top-content {
   width: 410px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
-.learn-top .content h3 {
+.learn-top .top-content h3 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 4%;
 }
-.learn-top .content p {
+.learn-top .top-content p {
   margin-bottom: 4%;
 }
-.learn-top .content button {
+.learn-top .top-content button {
+  background: white;
+  border: 1px solid black;
+  width: 8rem;
+}
+.learn-bottom {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+.learn-bottom .bottom-content {
+  width: 410px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.learn-bottom .bottom-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+.learn-bottom .bottom-content p {
+  margin-bottom: 4%;
+}
+.learn-bottom .bottom-content button {
   background: white;
   border: 1px solid black;
   width: 8rem;

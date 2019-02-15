@@ -8,6 +8,10 @@ USE WITH CAUTION AND TEST WITH ABANDON */
 
 *{
   box-sizing: border-box;
+  font-family: 'Roboto', 'Arial', 'sans-serif';
+  font-weight: 500;
+  line-height: 2.4rem;
+
 }
 
 html,body,div,span,applet,object,iframe,
@@ -62,26 +66,37 @@ table{
 }
 
 /* Your Code Goes Here */
+
 body {
   max-width: 880px;
   margin: 0 auto;
 }
 
+.home {
+  border: 1px solid black;
+}
+
 header {
   display: flex;
-  border: 1px solid red;
   justify-content: space-between;
+  background-color: #979CA1;
+  color: white;
+  padding: 2%;
 
-  nav a {
-    text-decoration: none;
-    color: black;
+  p {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 2.4rem;
   }
 }
 
 // intro section
 .intro {
   height: 598px;
-  border: 1px solid red;
   background-image: url(../img/home/home-jumbotron.png);
   background-size: cover;
   background-repeat: none;
@@ -91,11 +106,42 @@ header {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 6%;
+    padding: 2%;
 
-    h2 {
+    h1 {
       font-size: 3.5rem;
+      font-weight: bold;
       color: white;
+    }
+  }
+}
+
+.learn-top {
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  .content {
+    width: 410px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 4%;
+    }
+    
+    p {
+      margin-bottom: 4%;
+    }
+
+    button {
+      background: white;
+      border: 1px solid black;
+      width: 8rem;
     }
   }
 }

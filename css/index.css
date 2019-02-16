@@ -213,6 +213,7 @@ header .logo {
 }
 .learn-bottom .bottom-content {
   width: 410px;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -229,4 +230,83 @@ header .logo {
   background: white;
   border: 1px solid black;
   width: 8rem;
+}
+.recent-projects {
+  margin-top: 8%;
+  height: 230px;
+}
+.recent-projects h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.recent-projects .villas {
+  height: 100%;
+  margin-top: 4%;
+  background-image: url(../img/home/home-villas-img.png);
+  background-size: cover;
+  background-repeat: none;
+  position: relative;
+  margin-bottom: 4%;
+  border: 1px solid red;
+}
+.recent-projects .villas .square {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid black;
+  align-content: baseline;
+}
+.recent-projects .villa-description {
+  margin: 0 auto;
+  width: 50%;
+}
+.recent-projects h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.recent-projects .outskirts {
+  height: 100%;
+  margin-top: 4%;
+  background-image: url(../img/home/home-outskirts-img.png);
+  background-size: cover;
+  background-repeat: none;
+  position: relative;
+  margin-bottom: 4%;
+  border: 1px solid red;
+}
+.recent-projects .outskirts .square {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: 1px solid black;
+  align-content: baseline;
+}
+.recent-projects .outskirts-description {
+  margin: 0 auto;
+  width: 50%;
+}
+.recent-projects h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.recent-projects .blocks {
+  height: 100%;
+  margin-top: 4%;
+  background-image: url(../img/home/home-the-blocks-img.png);
+  background-size: cover;
+  background-repeat: none;
+  position: relative;
+  margin-bottom: 4%;
+  border: 1px solid red;
+}
+.recent-projects .blocks .square {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid black;
+  align-content: baseline;
+}
+.recent-projects .blocks-description {
+  margin: 0 auto;
+  width: 50%;
 }

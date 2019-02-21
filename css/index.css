@@ -523,6 +523,10 @@ copyright {
   height: 3rem;
   font-weight: bold;
 }
+.button-container .btn-active {
+  background: #5E9EB8;
+  color: white;
+}
 .services-container {
   padding: 0 2%;
   margin: 4% auto;

@@ -36,7 +36,7 @@ class ServiceContent {
     }
 
     select() {
-        const buttons = document.querySelectorAll('.services--btn');
+        const buttons = document.querySelectorAll('.services--card');
         buttons.forEach(button => button.classList.remove('active--card'));
         this.element.classList.add('active--card');
         this.serviceItem.select();

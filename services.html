@@ -13,19 +13,19 @@
 
     <body>
         <div class="services">
-            <header class="nav">
-                <h2>
-                    <a href="#">S&J</a>
-                </h2>
-
-                <div class="nav-btn"></div>
-
-                <nav>
-                    <a href="#" class="href">Home</a>
-                    <a href="#" class="href">Services</a>
-                    <a href="#" class="href">Contact</a>
-                </nav>
-            </header>
+            <header class="navigation">
+                <div class="logo">S&J</div>
+                <div class="nav">
+                    <img src="img/nav-hamburger.png" alt="dropdown" class="nav-button">
+                    <img src="img/nav-hamburger-close.png" alt="dropdown" class="nav-hidden close">
+                    <div class="nav-content nav-hidden">
+                        <a href="#" class="nav-link">Home</a>
+                        <a href="#" class="nav-link">Services</a>
+                        <a href="#" class="nav-link">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
             <!-- Intro Text -->
             <section class="services--intro">
                 <div class="intro--text">
@@ -43,14 +43,14 @@
 
             <!-- buttons -->
             <section class="button-container">
-                <button class="services--btn">Pre-Construction</button>
-                <button class="services--btn btn-active">Construction</button>
-                <button class="services--btn">Design Build</button>
-                <button class="services--btn">Sustainability</button>
+                <button class="services--btn" data-tab='1'>Pre-Construction</button>
+                <button class="services--btn btn-active" data-tab='2'>Construction</button>
+                <button class="services--btn" data-tab='3'>Design Build</button>
+                <button class="services--btn" data-tab='4'>Sustainability</button>
             </section>
 
             <!-- button content -->
-            <section class='services-container'>
+            <section class='services--container'>
                 <div class='services--card' data-tab='1'>
                     <div class='services--text'>
                         <h2>Pre-Construction</h2>

@@ -141,8 +141,6 @@ a {
 .navigation {
   width: 100%;
   position: relative;
-  top: 0;
-  left: 0;
   padding: 2% 0;
   display: flex;
   justify-content: space-between;
@@ -560,25 +558,25 @@ copyright {
   background: #5E9EB8;
   color: white;
 }
-.services-container {
+.services--container {
   padding: 0 2%;
   margin: 4% auto;
 }
-.services-container h2 {
+.services--container h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 4%;
 }
-.services-container .services--card {
+.services--container .services--card {
   display: none;
 }
-.services-container .active--card {
+.services--container .active--card {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   max-width: 100%;
 }
-.services-container .active--card .services--text {
+.services--container .active--card .services--text {
   width: 410px;
   display: flex;
   justify-content: center;

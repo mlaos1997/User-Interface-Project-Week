@@ -1,3 +1,4 @@
+// Extending navigation menu
 class NavExtended {
     constructor(element) {
     this.element = element;
@@ -18,4 +19,39 @@ class NavExtended {
 }
 
 let navMenu = document.querySelectorAll('.nav');
-navMenu = Array.from(navMenu).map(nav => new NavExtended(nav));
+navMenu.forEach(nav => new NavExtended(nav));
+
+
+
+
+// Tabs
+class ServiceContent {
+    constructor(element) {
+        this.element = element;
+        this.data = this.element.dataset.tab;
+        this.itemElement = document.querySelector(`.services--card[data-tab='${this.data}']`);
+        this.serviceItem = new TabItem(this.itemElement);
+
+        this.element.addEventListener('click', () => this.select());
+    }
+
+    select() {
+        const buttons = document.querySelectorAll('.services--btn');
+        buttons.forEach(button => button.classList.remove('active--card'));
+        this.element.classList.add('active--card');
+        this.serviceItem.select();
+    }
+}
+
+class TabItem {
+    constructor(element) {
+        this.element = element;
+    }
+    select() {
+        const buttons = document.querySelectorAll('.services--btn');
+        buttons.forEach(button => button.classList.remove('active--card'));
+    }
+}
+
+let serviceButtons = document.querySelectorAll('.services--btn');
+serviceButtons.forEach(service => new ServiceContent(service));

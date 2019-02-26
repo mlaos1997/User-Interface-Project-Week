@@ -1,0 +1,78 @@
+.services--intro {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    background-image: url('./../img/services/services-jumbotron.png');
+    background-repeat: none;
+    background-size: cover;
+
+    .intro--text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 2%;
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
+
+.services--about {
+    margin: 4% 0;
+    padding: 0 2%;
+}
+
+.button-container {
+    padding: 0 2%;
+    display: flex;
+    justify-content: space-between;
+
+    .services--btn {
+        background: white;
+        border: 1px solid black;
+        width: 8rem;
+        height: 3rem;
+        font-weight: bold;
+    }
+
+    .btn-active {
+        background: #5E9EB8;
+        color: white;
+    }
+}
+
+.services--container {
+    padding: 0 2%;
+    margin: 4% auto;
+
+    h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 4%;
+    }
+
+    .services--card {
+        display: none;
+    }
+
+    .active--card {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        max-width: 100%;
+
+        .services--text {
+            width: 410px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+    }
+}

@@ -422,6 +422,12 @@ copyright {
   display: flex;
   align-items: flex-end;
 }
+@media (max-width: 540px) {
+  .villas .project-name {
+    margin: 0 auto;
+    margin-bottom: 4%;
+  }
+}
 .villas .project-name h3 {
   z-index: 1;
   width: 260px;
@@ -461,6 +467,12 @@ copyright {
   display: flex;
   align-items: flex-end;
 }
+@media (max-width: 540px) {
+  .outskirts .project-name {
+    margin: 0 auto;
+    margin-bottom: 4%;
+  }
+}
 .outskirts .project-name h3 {
   z-index: 1;
   width: 260px;
@@ -499,6 +511,12 @@ copyright {
 .blocks .project-name {
   display: flex;
   align-items: flex-end;
+}
+@media (max-width: 540px) {
+  .blocks .project-name {
+    margin: 0 auto;
+    margin-bottom: 4%;
+  }
 }
 .blocks .project-name h3 {
   z-index: 1;

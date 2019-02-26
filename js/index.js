@@ -27,31 +27,36 @@ navMenu.forEach(nav => new NavExtended(nav));
 // Tabs
 class ServiceContent {
     constructor(element) {
+        // assign this.element to passed
         this.element = element;
         this.data = this.element.dataset.tab;
         this.itemElement = document.querySelector(`.services--card[data-tab='${this.data}']`);
-        this.serviceItem = new TabItem(this.itemElement);
-
+        this.tabItem = new TabItem(this.itemElement);
+        console.log(this.tabItem);
         this.element.addEventListener('click', () => this.select());
-    }
+    };
 
     select() {
-        const buttons = document.querySelectorAll('.services--card');
-        buttons.forEach(button => button.classList.remove('active--card'));
-        this.element.classList.add('active--card');
-        this.serviceItem.select();
+        const links = document.querySelectorAll('.services--btn');
+        links.forEach(link => link.classList.remove('btn-active'));
+        this.element.classList.add('btn-active');
+        this.tabItem.select();
     }
-}
+};
+
 
 class TabItem {
     constructor(element) {
         this.element = element;
     }
+
     select() {
-        const buttons = document.querySelectorAll('.services--btn');
-        buttons.forEach(button => button.classList.remove('active--card'));
+        const items = document.querySelectorAll('.services--card');
+        items.forEach(item => item.classList.remove('active--card'));
+        this.element.classList.add('active--card');
     }
 }
 
 let serviceButtons = document.querySelectorAll('.services--btn');
-serviceButtons.forEach(service => new ServiceContent(service));
+serviceButtons.forEach(button => new ServiceContent(button));
+console.log(serviceButtons);
